@@ -3,6 +3,7 @@ import Header from './Header'
 import Article from './Article'
 import Clickbait from './Clickbait'
 import Ad from './Ad'
+import ArticleHeader from './ArticleHeader'
 import Footer from './Footer'
 import './App.css';
 
@@ -14,10 +15,11 @@ class App extends Component {
         <Header />
 
         <main className="expanded row">
+          <ArticleHeader/>
           <Article/>
           <Ad/>
 
-        {/*<Clickbait/>*/}
+         <Clickbait/>
         </main>
 
         <Footer/>
