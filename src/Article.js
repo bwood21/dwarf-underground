@@ -7,7 +7,7 @@ class Article extends Component {
         super(props)
 
         this.state = {
-          showComments = false
+          showComments :false
         }
         this.toggleComments = this.toggleComments.bind(this)
       }
@@ -15,7 +15,7 @@ class Article extends Component {
         toggleComments(ev){
           ev.preventDefault()
           this.setState({
-            showComments = !this.state.showComments
+            showComments : !this.state.showComments
           })
         }
  
@@ -53,7 +53,7 @@ class Article extends Component {
                 <span className="article-link-text">Share Post</span>
               </a>
             </div>
-            {this.state.showComments ? <div>Comments Enabled</div>:null}
+            {this.state.showComments ? <div><Comments/></div>:null}
           </div>
 
 
