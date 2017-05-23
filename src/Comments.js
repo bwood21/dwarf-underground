@@ -18,7 +18,14 @@ class Comments extends Component {
     }
 
     addComment(ev){
-            
+            const state = {...this.state}  
+            const comment = {
+                text: this.state.comment,
+                time: new Date()
+            } 
+            state.comments.push(comment)
+            state.comment = ''
+            this.setState(state)
     }
 
     render(){
@@ -26,9 +33,11 @@ class Comments extends Component {
             <div>
                 <textarea placeholder="Enter a comment"></textarea>
                 <button className = "button" onClick={this.addComment}>Submit Comment</button>
+                {this.state.comments.map((comment,i)=>{<div className="comment" key={i}><div>{comment.text}</div></div>})}
             </div>
         )
     }
 }
+
 
 export default Comments
