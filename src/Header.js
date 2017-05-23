@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import './Header.css'
 
+// const links = ['home','about','login']
+
 class Header extends Component {
   render() {
     return (
@@ -13,6 +15,7 @@ class Header extends Component {
             <a href="#">Home</a>
             <a href="#">About</a>
             <a href="#">Log in</a>
+            {/*<NavLinks={links}/>*/}
           </div>
         </div>
         <div className="headline text-center small-12 columns">

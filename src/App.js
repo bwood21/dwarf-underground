@@ -5,6 +5,7 @@ import Clickbait from './Clickbait'
 import Ad from './Ad'
 import ArticleHeader from './ArticleHeader'
 import Footer from './Footer'
+import Comments from './Comments'
 import './App.css';
 
 
@@ -18,11 +19,9 @@ class App extends Component {
           <ArticleHeader/>
           <Article/>
           <Ad/>
-
-         <Clickbait/>
-        </main>
-
-        <Footer/>
+          <Clickbait/>
+          </main>
+          <Footer/>
       </div>
     );
   }
